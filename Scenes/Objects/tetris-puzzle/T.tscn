@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://1ee4vickgrus"]
+
+[ext_resource type="Material" uid="uid://bssm88drufbc5" path="res://Materials/T.tres" id="1_gyo3a"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_eyi8p"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.75, 0, 0)
+mesh = SubResource("BoxMesh_eyi8p")
+surface_material_override/0 = ExtResource("1_gyo3a")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 4.5, 0.75, 0, 0)
+mesh = SubResource("BoxMesh_eyi8p")
+surface_material_override/0 = ExtResource("1_gyo3a")
